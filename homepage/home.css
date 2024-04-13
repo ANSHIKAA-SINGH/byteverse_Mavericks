@@ -17,3 +17,31 @@ h1{
     text-shadow: 7px 5px 5px rgb(39, 38, 38);
 
 }
+.heading{
+    background-color:#c0a9dd;
+    height: 200px;
+ 
+}
+.logo{
+    position: absolute;
+    top:0;
+    left:0;
+
+    
+}
+.logo img{
+    height: 120px;
+    margin-top: 45px;
+    margin-left: 20px;
+}
+
+.sub_heading{
+    color: aliceblue;
+    display:flex ;
+     flex-direction: row;
+     align-content: center;
+     gap:200px;
+     margin-left: 320px;
+     font-size: 15px;
+ 
+}
