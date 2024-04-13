@@ -1,0 +1,19 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+    padding: 0;
+    max-width: max-content;
+}
+
+h1{
+    color: #615aa6;
+    margin-left: 420px;
+    padding-top: 30px;
+    
+    height: 100px;
+    font-size: 90px;
+    text-shadow: 7px 5px 5px rgb(39, 38, 38);
+
+}
