@@ -1,0 +1,21 @@
+*{
+    margin:0;
+padding:0;
+}
+.login{
+    background-color: #DBDBDB;
+    height: 730px;
+    width:600px;
+}
+.logo{
+    position: absolute;
+    top:0;
+    left:0;
+
+    
+}
+.logo img{
+    height: 120px;
+    margin-top: 150px;
+    margin-left: 60px;
+}
