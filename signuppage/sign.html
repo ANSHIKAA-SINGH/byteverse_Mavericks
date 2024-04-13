@@ -37,10 +37,17 @@
         <form action="#" method="post">
             <input type="text" id="fullname" name="Full Name" placeholder="Full Name" required>
             <input type="text" id="username" name="UserName" placeholder="UserName" required>
+            
           <input type="text" id="email" name="Email or Phone Number" placeholder="Email or Phone Number" required>
+          <!-- <input type="button" id="send" value="send">
+            </div> -->
           <input type="password" id="password" name="password" placeholder="Password" required>
-          <input type="text" id="verificationcode" name="Verification Code" placeholder="Verification Code" required>
-          <input type="submit" value="Create Account">
+          <!-- <div id="verifier" style="display:none"><input type="text" id="verificationcode" name="Verification Code" placeholder="Verification Code" required>
+            <input type="button" id="verify" value="verify">
+            <div class="p-conf">Verified!</div>
+            <div class="n-conf">OTP error!</div>
+          </div> -->
+            <input type="submit" value="Create Account">
           <div class="last">
             <h5>Already have an account ?</h5>
           </div>
@@ -87,6 +94,33 @@
    });
      alert("Sign Up Sucessfull  !");
   })
+
+  // function for send OTP
+function phoneAuth() {
+
+    var num = document.getElementById('email').value;
+    if(typeof value ==="number"){
+    firebase.auth().signInWithPhoneNumber(number, window.recaptchaVerifier).then(function (confirmationResult) {
+        window.confirmationResult = confirmationResult;
+        coderesult = confirmationResult;
+        console.log('OTP Sent');
+    }).catch(function (error) {
+        // error in sending OTP
+        alert(error.message);
+    });
+  }
+}
+
+// function for OTP verify
+function codeverify() {
+    var code = document.getElementById('verificationcode').value;
+    coderesult.confirm(code).then(function () {
+        console.log('OTP Verified');
+    }).catch(function () {
+        console.log('OTP Not correct');
+    })
+}
+
 </script>
    
 </body>
