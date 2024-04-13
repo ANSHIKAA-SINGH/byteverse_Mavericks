@@ -1,0 +1,30 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.main{
+    color: #615aa6;
+    margin-left: 550px;
+    padding-top: 30px;
+    
+    height: 130px;
+    font-size: 90px;
+    text-shadow: 7px 5px 5px rgb(39, 38, 38);
+
+}
+.heading{
+    background-color:#c0a9dd;
+    
+}
+.logo{
+    position: absolute;
+    top:0;
+    left:0;
+
+    
+}
+.logo img{
+    height: 120px;
+    margin-top: 45px;
+    margin-left: 50px;
+}
