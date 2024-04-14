@@ -1,4 +1,4 @@
- # A website to aid women safety and needs in college?universities..
+ # A website to aid women safety and needs in college/universities..
 Basically a web application leavaraging advance web development tools to be developed which adresses women's safety concerns and 
 facilitate outreach for their needs.
 # How is it useful?
