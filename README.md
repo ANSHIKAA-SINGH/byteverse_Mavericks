@@ -15,7 +15,7 @@ Marks red zone areas and places related to different facilities neraby colleges 
 4.Bootstrap
 5.Firebase (realtime database)
 # Installation steps:-
-First go to index.html file of landing page -> Home page appears -> Then you have options for sign in , sign up, accessing contacts, chatbot -> Then there is a community page and a women forum followed by it.
+First go to index.html file of landing page -> Home page appears -> Then you have options for sign in , sign up, accessing contacts, chatbot -> Then there is a community page and a women forum followed by it. LINK https://github.com/ANSHIKAA-SINGH/byteverse_Mavericks/blob/main/landingpage/index.html
 
 #  Features:-
 1.login and signup page
