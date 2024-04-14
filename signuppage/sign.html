@@ -22,19 +22,108 @@
         <img src="logo.png">
     </div>
     <div class="login-container">
-        <h2>Sign-in</h2>
+       
+        
+        <h2>Create Account</h2>
         <br>
         <br>
+        <div class="google">
+        <button style="border-color: blueviolet; border-radius: 10px;"><img src="google.png">login with google</button>
+        </div>
+        <br>
+        <br>
+        <h1  class="or" style="color:grey">-OR-</h1>
+
         <form action="#" method="post">
-          <input type="text" name="Email or username" placeholder="Email or Username" required>
-          <input type="password" name="password" placeholder="Password" required>
-          <input type="submit" value="Login">
-          <div class="users_signup">
-            Don't have an account? <a href="#" style="color:  #9D9D9D;">Signup Here </a>
-            </div>
+            <input type="text" id="fullname" name="Full Name" placeholder="Full Name" required>
+            <input type="text" id="username" name="UserName" placeholder="UserName" required>
+            
+          <input type="text" id="email" name="Email or Phone Number" placeholder="Email or Phone Number" required>
+          <!-- <input type="button" id="send" value="send">
+            </div> -->
+          <input type="password" id="password" name="password" placeholder="Password" required>
+          <!-- <div id="verifier" style="display:none"><input type="text" id="verificationcode" name="Verification Code" placeholder="Verification Code" required>
+            <input type="button" id="verify" value="verify">
+            <div class="p-conf">Verified!</div>
+            <div class="n-conf">OTP error!</div>
+          </div> -->
+            <input type="submit" value="Create Account">
+          <div class="last">
+            <h5>Already have an account ?</h5>
+          </div>
+          <div class="loginn">
+            <h5>login</h5>
+          </div>
+          
         </form>
+       
    
    
+   <script type="module">
+    // Import the functions you need from the SDKs you need
+ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+ import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
+
+
+// Your web app's Firebase configuration
+ const firebaseConfig = {
+   apiKey: "AIzaSyAkPgAR0Hs6v5oNlmxYxI2OGh-S8YA2OWU",
+   authDomain: "creativetutorial-43ba7.firebaseapp.com",
+   projectId: "creativetutorial-43ba7",
+   storageBucket: "creativetutorial-43ba7.appspot.com",
+   messagingSenderId: "52869654198",
+   appId: "1:52869654198:web:0a19740d1f26ade1066817"
+ };
+
+// Initialize Firebase
+ const app = initializeApp(firebaseConfig);
+
+//get ref to database services
+  const db = getDatabase(app);
+
+  document.getElementById("submit").addEventListener('click', function(e){
+   e.preventDefault();
+   set(ref(db, 'user/' + document.getElementById("username").value),
+   {
+
+     fullname: document.getElementById("fullname").value,
+     username: document.getElementById("username").value,
+     emailorphonenumber: document.getElementById("email").value,
+     password: document.getElementById("password").value,
+
+
+   });
+     alert("Sign Up Sucessfull  !");
+  })
+
+  // function for send OTP
+function phoneAuth() {
+
+    var num = document.getElementById('email').value;
+    if(typeof value ==="number"){
+    firebase.auth().signInWithPhoneNumber(number, window.recaptchaVerifier).then(function (confirmationResult) {
+        window.confirmationResult = confirmationResult;
+        coderesult = confirmationResult;
+        console.log('OTP Sent');
+    }).catch(function (error) {
+        // error in sending OTP
+        alert(error.message);
+    });
+  }
+}
+
+// function for OTP verify
+function codeverify() {
+    var code = document.getElementById('verificationcode').value;
+    coderesult.confirm(code).then(function () {
+        console.log('OTP Verified');
+    }).catch(function () {
+        console.log('OTP Not correct');
+    })
+}
+
+</script>
    
 </body>
 </html>
