@@ -14,6 +14,8 @@ Marks red zone areas and places related to different facilities neraby colleges 
 3.Botpress
 4.Bootstrap
 5.Firebase (realtime database)
+# Installation steps:-
+First go to index.html file of landing page -> Home page appears -> Then you have options for sign in , sign up, accessing contacts, chatbot -> Then there is a community page and a women forum followed by it.
 
 #  Features:-
 1.login and signup page
