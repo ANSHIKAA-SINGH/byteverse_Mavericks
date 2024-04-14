@@ -1,0 +1,134 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+    padding: 0;
+    margin: 0;
+    max-width: fit-content;
+    
+}
+
+h1{
+    color: #615aa6;
+    margin-left: 420px;
+    padding-top: 30px;
+    
+    height: 100px;
+    font-size: 90px;
+    text-shadow: 7px 5px 5px rgb(39, 38, 38);
+
+}
+.heading{
+    background-color:#c0a9dd;
+    height: 200px;
+   
+ 
+}
+.logo{
+    position: absolute;
+    top:0;
+    left:0;
+
+    
+}
+.logo img{
+    height: 120px;
+    margin-top: 45px;
+    margin-left: 20px;
+}
+
+.sub_heading{
+    color: aliceblue;
+    display:flex ;
+     flex-direction: row;
+     align-content: center;
+     gap:200px;
+     margin-left: 320px;
+     font-size: 15px;
+ 
+}
+h2{
+    padding-top: 30px;
+}
+.title{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 40px;
+}
+.outreach{
+    font-size:25px ;
+    padding-left: 60px;
+    padding-top: 40px;
+    padding-bottom: 10px ;
+}
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #c0a9dd;
+    color: white;
+  }
+  .block2{
+    padding: 30px;
+  }
+
+  .communityBlock{
+    padding: 30px;
+    
+    
+    
+  }
+  .communityHeading{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    
+  }
+  .faqs{
+    text-align: center;
+    padding: 30px;
+  }
+  #btn{
+    display: inline-block;
+    padding: 12px 20px;
+    background: #615AA8;
+    border-radius: 30px;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 300;
+    margin-left: 400px;
+    margin-top: 20px;
+}
+.post{
+    margin-left: 700px;
+}
+
+#dev
+{
+    height: 100px;
+    width: 1000px;
+    padding: 0 5px;
+}
+.id{
+margin-left: 200px;
+}
+
+  
