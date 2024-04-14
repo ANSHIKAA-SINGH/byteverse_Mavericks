@@ -19,10 +19,13 @@ Marks red zone areas and places related to different facilities neraby colleges 
 3.Botpress
 4.Bootstrap
 
-# How to access adn use project?
+# How to access and use project?
 
 
 # How and what contributes to project:-
+
+
+# A walkthrough of the website:--
 
 
 
