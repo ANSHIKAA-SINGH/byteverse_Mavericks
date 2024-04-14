@@ -1,19 +1,20 @@
- # A website to aid women safety and needs in college/universities..
+# A website to aid women safety and needs in college/universities 👧
+ overview--
 Basically a web application leavaraging advance web development tools to be developed which adresses women's safety concerns and 
-facilitate outreach for their needs.
+facilitate outreach for their needs. It provides women a platform where they can access all the neccessary information at a sigle website.
 
-# How is it useful?
+ How is it useful?
 as it  helps many women to get all india helpline numbers withou even logging in and at a same place conviniently.
 Marks red zone areas and places related to different facilities neraby colleges and universities.
 
 
-# Tech used:-
+ Tech Stack  :-
 1.Html,Css, Javascript
 2.Firebase (realtime database)
 3.Botpress
 4.Bootstrap
 
-# Table of contents:-
+ Features:-
 1.login and signup page
 [Screenshot (380)](https://github.com/ANSHIKAA-SINGH/byteverse_Mavericks/assets/161723959/b266b8b6-a672-4c4d-9239-d5868ade433d)
 ![Screenshot (381)](https://github.com/ANSHIKAA-SINGH/byteverse_Mavericks/assets/161723959/e4d60791-c175-4fbc-a3ae-e7ea81cfd2cd)
@@ -31,13 +32,7 @@ Marks red zone areas and places related to different facilities neraby colleges 
 ![Screenshot (386)](https://github.com/ANSHIKAA-SINGH/byteverse_Mavericks/assets/161723959/338660de-1335-4e16-9f8c-bb7ae70480ac)
 
 
-# A walkthrough of the website:--
-
-
-
-
-
-# libraries and dependencies:-
+libraries and dependencies:-
 *APIs rovided by releva±t
 authorities or organizations to fetch and
 display helpline numbers
