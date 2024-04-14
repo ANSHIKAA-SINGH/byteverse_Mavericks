@@ -28,102 +28,37 @@
         <br>
         <br>
         <div class="google">
-        <button style="border-color: blueviolet; border-radius: 10px;"><img src="google.png">login with google</button>
+            <button style="border-color: blueviolet; border-radius: 10px;"><img src="google.png">login with google</button>
         </div>
         <br>
         <br>
         <h1  class="or" style="color:grey">-OR-</h1>
 
-        <form action="#" method="post">
+        <form action="/homepage/homepg.html" method="get">
             <input type="text" id="fullname" name="Full Name" placeholder="Full Name" required>
             <input type="text" id="username" name="UserName" placeholder="UserName" required>
             
-          <input type="text" id="email" name="Email or Phone Number" placeholder="Email or Phone Number" required>
-          <!-- <input type="button" id="send" value="send">
-            </div> -->
-          <input type="password" id="password" name="password" placeholder="Password" required>
-          <!-- <div id="verifier" style="display:none"><input type="text" id="verificationcode" name="Verification Code" placeholder="Verification Code" required>
-            <input type="button" id="verify" value="verify">
-            <div class="p-conf">Verified!</div>
-            <div class="n-conf">OTP error!</div>
-          </div> -->
-            <input type="submit" value="Create Account">
-          <div class="last">
-            <h5>Already have an account ?</h5>
-          </div>
-          <div class="loginn">
-            <h5>login</h5>
-          </div>
+            <input type="text" id="email" name="Email or Phone Number" placeholder="Email or Phone Number" required>
           
+            <input type="password" id="password" name="password" placeholder="Password" required>
+          
+            <button type="submit">Create Account</button>
         </form>
-       
    
-   
-   <script type="module">
-    // Import the functions you need from the SDKs you need
- import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
- import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
- import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
+    </div>
+    <div class="last">
+        <h5>Already have an account ? <a href="#" class="loginn">Login</a></h5>
+    </div>
 
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+ <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js"></script>
 
-// Your web app's Firebase configuration
- const firebaseConfig = {
-   apiKey: "AIzaSyAkPgAR0Hs6v5oNlmxYxI2OGh-S8YA2OWU",
-   authDomain: "creativetutorial-43ba7.firebaseapp.com",
-   projectId: "creativetutorial-43ba7",
-   storageBucket: "creativetutorial-43ba7.appspot.com",
-   messagingSenderId: "52869654198",
-   appId: "1:52869654198:web:0a19740d1f26ade1066817"
- };
+ <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+ <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-database.js"></script>
 
-// Initialize Firebase
- const app = initializeApp(firebaseConfig);
-
-//get ref to database services
-  const db = getDatabase(app);
-
-  document.getElementById("submit").addEventListener('click', function(e){
-   e.preventDefault();
-   set(ref(db, 'user/' + document.getElementById("username").value),
-   {
-
-     fullname: document.getElementById("fullname").value,
-     username: document.getElementById("username").value,
-     emailorphonenumber: document.getElementById("email").value,
-     password: document.getElementById("password").value,
-
-
-   });
-     alert("Sign Up Sucessfull  !");
-  })
-
-  // function for send OTP
-function phoneAuth() {
-
-    var num = document.getElementById('email').value;
-    if(typeof value ==="number"){
-    firebase.auth().signInWithPhoneNumber(number, window.recaptchaVerifier).then(function (confirmationResult) {
-        window.confirmationResult = confirmationResult;
-        coderesult = confirmationResult;
-        console.log('OTP Sent');
-    }).catch(function (error) {
-        // error in sending OTP
-        alert(error.message);
-    });
-  }
-}
-
-// function for OTP verify
-function codeverify() {
-    var code = document.getElementById('verificationcode').value;
-    coderesult.confirm(code).then(function () {
-        console.log('OTP Verified');
-    }).catch(function () {
-        console.log('OTP Not correct');
-    })
-}
-
-</script>
-   
+ <!-- Our script must be loaded after firebase references -->
+ <script src="signup.js"></script>
 </body>
 </html>
