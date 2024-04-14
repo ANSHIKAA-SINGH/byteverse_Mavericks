@@ -23,3 +23,43 @@
         <div class="logo">
             <img src="logo.png" >
         </div>
+        
+        <h1 class="forum">Forum</h1>
+        <h4 class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quae accusamus facilis sit officia, accusantium, enim asperiores laboriosam fuga dolore quidem eaque? Unde corporis alias, aperiam expedita quae est eum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quae accusamus facilis sit officia, accusantium, enim asperiores laboriosam fuga dolore quidem eaque? Unde corporis alias, aperiam expedita quae est eum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quae accusamus facilis sit officia, accusantium, enim asperiores laboriosam fuga dolore quidem eaque? Unde corporis alias, aperiam expedita quae est eum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quae accusamus facilis sit officia, accusantium, enim asperiores laboriosam fuga dolore quidem eaque? Unde corporis alias, aperiam expedita quae est eum?
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quae accusamus facilis sit officia, accusantium, enim asperiores laboriosam fuga dolore quidem eaque? Unde corporis alias, aperiam expedita quae est eum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quae accusamus facilis sit officia, accusantium, enim asperiores laboriosam fuga dolore quidem eaque? Unde corporis alias, aperiam expedita quae est eum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quae accusamus facilis sit officia, accusantium, enim asperiores laboriosam fuga dolore quidem eaque? Unde corporis alias, aperiam expedita quae est eum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quae accusamus facilis sit officia, accusantium, enim asperiores laboriosam fuga dolore quidem eaque? Unde corporis alias, aperiam expedita quae est eum?</h4>
+            <div class="beat">
+        <h3 class="name">Full <br> Name</h3>
+        
+            </div>
+            <div class="id">
+                <input id="dev" type="text">
+                <div id="content" > </div>
+                <button id="btn" >post</button>
+            </div>
+        </div> 
+       
+        <div class="footer">
+        
+        </div>
+            <script>
+        
+                var btn=document.getElementById('btn');
+                btn.addEventListener('click', ()=> {
+                    var input=document.getElementById('dev').value;
+                    var data=document.createElement('p');
+                    data.innerText=input;
+                    document.getElementById('content').appendChild(data);
+        
+        
+        
+                });
+   </script>
+   
+</body>
+</html>
