@@ -52,7 +52,7 @@
 
 
 .forum{
-    margin-left: 600px;
+    margin-left: 700px;
     margin-top: 40px;
     color: #615AA8;
     text-shadow: 2px 1px 1px ;
@@ -79,7 +79,7 @@
     margin-top: 30px;
 }
 
-    #btn{
+    .btn-box{
         display: inline-block;
         padding: 12px 20px;
         background: #615AA8;
@@ -89,18 +89,12 @@
         letter-spacing: 1px;
         text-decoration: none;
         font-weight: 300;
-        margin-left: 400px;
-        margin-top: 20px;
+        margin-left: 1400px;
     }
     .post{
         margin-left: 700px;
     }
     
 .id{
-    margin-left: 200px;
-}
-#dev{
-    height: 100px;
-    width: 1000px;
-    padding: 0 5px;
+    margin-left: 100px;
 }
