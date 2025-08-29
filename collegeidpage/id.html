@@ -1,50 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College id</title>
-    <link href="id.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="id.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="Logo" />
+      </div>
+      <h1 class="main">SecureShe</h1>
+      <div class="sub_heading">
+        <h2>Secure.</h2>
+        <h2>Empower.</h2>
+        <h2>Thrive.</h2>
+      </div>
 
-</head>
-<body>
-    <div class="login">
-        <div class="heading">
-            <h1 class="main">SecureShe</h1>
-            <div class="sub_heading">
-                <h2>Secure.</h2>
-                <h2>Empower.</h2>
-                <h2>Thrive.</h2>
-            </div>
-        </div>
-    </div>
-    <div class="logo">
-        <img src="logo.png" >
-    </div>
-    <div class="name">
-    <h1>National Institute Of Technology Patna</h1>
-        <br>
-        <br>
-    </div>
-    <div class="login-container">
-       
-
-        <h2>Verification</h2>
-        <br>
-        <br>
-        <form action="/communitypage/com.html" method="get">
-          <input type="text" name="Email or username" placeholder="Email or Username" required>
-          <input type="password" name="password" placeholder="Enter code" required>
-          <div class="users_signup">
-            Resend Code
-            </div>
-            <br>
-            <br>
-          <button type="submit" >Verifiy</button>
-          
+      <div class="login-container">
+        <h2>Create Account</h2>
+        <form action="/homepage/homepg.html" method="get">
+          <input type="text" name="fullname" placeholder="Full Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <input
+            type="password"
+            name="confirm_password"
+            placeholder="Confirm Password"
+            required
+          />
+          <button type="submit">Sign Up</button>
         </form>
-   
-   <script src=verify.js> </script>
-   
-</body>
+        <div class="user_signup">
+          Already have an account?
+          <a href="../signinpages/signin.html">Login Here</a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

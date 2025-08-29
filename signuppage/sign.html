@@ -1,64 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sign</title>
-    <link href="sign.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="sign.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="Logo" />
+      </div>
+      <h1 class="main">SecureShe</h1>
+      <div class="sub_heading">
+        <h2>Secure.</h2>
+        <h2>Empower.</h2>
+        <h2>Thrive.</h2>
+      </div>
 
-</head>
-<body>
-    <div class="login">
-        <div class="heading">
-            <h1 class="main">SecureShe</h1>
-            <div class="sub_heading">
-                <h2>Secure.</h2>
-                <h2>Empower.</h2>
-                <h2>Thrive.</h2>
-            </div>
-        </div>
-    </div>
-    <div class="logo">
-        <img src="logo.png">
-    </div>
-    <div class="login-container">
-       
-        
+      <div class="login-container">
         <h2>Create Account</h2>
-        <br>
-        <br>
-        <div class="google">
-            <button style="border-color: blueviolet; border-radius: 10px;"><img src="google.png">login with google</button>
-        </div>
-        <br>
-        <br>
-        <h1  class="or" style="color:grey">-OR-</h1>
-
         <form action="/homepage/homepg.html" method="get">
-            <input type="text" id="fullname" name="Full Name" placeholder="Full Name" required>
-            <input type="text" id="username" name="UserName" placeholder="UserName" required>
-            
-            <input type="text" id="email" name="Email or Phone Number" placeholder="Email or Phone Number" required>
-          
-            <input type="password" id="password" name="password" placeholder="Password" required>
-          
-            <button type="submit">Create Account</button>
+          <input type="text" name="fullname" placeholder="Full Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <input
+            type="password"
+            name="confirm_password"
+            placeholder="Confirm Password"
+            required
+          />
+          <button type="submit">Sign Up</button>
         </form>
-   
+        <div class="user_signup">
+          Already have an account?
+          <a href="../signinpages/signin.html">Login Here</a>
+        </div>
+      </div>
     </div>
-    <div class="last">
-        <h5>Already have an account ? <a href="../signinpages/signin.html" class="loginn">Login</a></h5>
-    </div>
-
- <!-- The core Firebase JS SDK is always required and must be listed first -->
- <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js"></script>
-
- <!-- TODO: Add SDKs for Firebase products that you want to use
-      https://firebase.google.com/docs/web/setup#available-libraries -->
- <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js"></script>
- <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-database.js"></script>
-
- <!-- Our script must be loaded after firebase references -->
- <script src="signup.js"></script>
-</body>
+  </body>
 </html>

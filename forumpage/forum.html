@@ -1,64 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forum | SecureShe</title>
+    <link href="forum.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <div class="logo-section">
+        <img src="logo.png" alt="SecureShe Logo" class="logo-img" />
+        <h1 class="main-title">SecureShe</h1>
+      </div>
+      <div class="tagline">
+        <span>Secure.</span>
+        <span>Empower.</span>
+        <span>Thrive.</span>
+      </div>
+    </header>
 
-    <title>Forum</title>
-    
-    <link href="forum.css" rel="stylesheet">
-</head>
-<body>
-    <div class="container">
-        
-        <div class="heading">
-            <h1 class="main">SecureShe</h1>
-            <div class="sub_heading">
-                <h2>Secure.</h2>
-                <h2>Empower.</h2>
-                <h2>Thrive.</h2>
-            </div>
+    <!-- Main Content -->
+    <main class="container">
+      <h1 class="forum-title">Forum</h1>
+      <p class="description">
+        Welcome to the SecureShe community forum. Share your thoughts, ideas,
+        and discussions here. Together, we can create a safer and empowering
+        environment for everyone.
+      </p>
+
+      <!-- Post Section -->
+      <section class="post-section">
+        <div class="input-group">
+          <label for="dev" class="input-label">Write a post:</label>
+          <input
+            id="dev"
+            type="text"
+            placeholder="Post something..."
+            class="post-input"
+          />
+          <button id="btn" class="post-btn">Post</button>
         </div>
-        
-        <div class="logo">
-            <img src="logo.png" >
+        <div id="content" class="post-content">
+          <!-- Posted messages will appear here -->
         </div>
-        <h1 class="forum">Forum</h1>
-        <h4 class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quae accusamus facilis sit officia, accusantium, enim asperiores laboriosam fuga dolore quidem eaque? Unde corporis alias, aperiam expedita quae est eum?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quae accusamus facilis sit officia, accusantium, enim asperiores laboriosam fuga dolore quidem eaque? Unde corporis alias, aperiam expedita quae est eum?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quae accusamus facilis sit officia, accusantium, enim asperiores laboriosam fuga dolore quidem eaque? Unde corporis alias, aperiam expedita quae est eum?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quae accusamus facilis sit officia, accusantium, enim asperiores laboriosam fuga dolore quidem eaque? Unde corporis alias, aperiam expedita quae est eum?
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quae accusamus facilis sit officia, accusantium, enim asperiores laboriosam fuga dolore quidem eaque? Unde corporis alias, aperiam expedita quae est eum?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quae accusamus facilis sit officia, accusantium, enim asperiores laboriosam fuga dolore quidem eaque? Unde corporis alias, aperiam expedita quae est eum?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quae accusamus facilis sit officia, accusantium, enim asperiores laboriosam fuga dolore quidem eaque? Unde corporis alias, aperiam expedita quae est eum?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quae accusamus facilis sit officia, accusantium, enim asperiores laboriosam fuga dolore quidem eaque? Unde corporis alias, aperiam expedita quae est eum?</h4>
-            <div class="beat">
-        <h3 class="name">Full <br> Name</h3>
-        
-            </div>
-            <div class="id">
-                <input id="dev" type="text">
-                <div id="content" > </div>
-                <button id="btn" >post</button>
-            </div>
-        </div> 
-       
-        <div class="footer">
-        
-        </div>
-            <script>
-        
-                var btn=document.getElementById('btn');
-                btn.addEventListener('click', ()=> {
-                    var input=document.getElementById('dev').value;
-                    var data=document.createElement('p');
-                    data.innerText=input;
-                    document.getElementById('content').appendChild(data);
-        
-        
-        
-                });
-   </script>
-   
-</body>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 SecureShe. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      const btn = document.getElementById('btn');
+      const inputField = document.getElementById('dev');
+      const content = document.getElementById('content');
+
+      btn.addEventListener('click', () => {
+        const input = inputField.value.trim();
+        if (input === '') return;
+
+        const post = document.createElement('div');
+        post.classList.add('post-item');
+        post.innerHTML = `<p>${input}</p>`;
+
+        content.appendChild(post);
+        inputField.value = '';
+      });
+    </script>
+  </body>
 </html>

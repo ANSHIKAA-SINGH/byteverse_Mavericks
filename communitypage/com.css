@@ -1,134 +1,163 @@
-*{
-    margin: 0%;
-    padding: 0%;
-}
-.container{
-    padding: 0;
-    margin: 0;
-    max-width: fit-content;
-    
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-h1{
-    color: #615aa6;
-    margin-left: 420px;
-    padding-top: 30px;
-    
-    height: 100px;
-    font-size: 90px;
-    text-shadow: 7px 5px 5px rgb(39, 38, 38);
-
-}
-.heading{
-    background-color:#c0a9dd;
-    height: 200px;
-   
- 
-}
-.logo{
-    position: absolute;
-    top:0;
-    left:0;
-
-    
-}
-.logo img{
-    height: 120px;
-    margin-top: 45px;
-    margin-left: 20px;
+/* Container */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.sub_heading{
-    color: aliceblue;
-    display:flex ;
-     flex-direction: row;
-     align-content: center;
-     gap:200px;
-     margin-left: 320px;
-     font-size: 15px;
- 
+/* Header Section */
+.heading {
+  background: linear-gradient(135deg, #c0a9dd, #a28bd5);
+  padding: 40px 20px;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
-h2{
-    padding-top: 30px;
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
-.title{
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 40px;
+
+.logo img {
+  height: 80px;
 }
-.outreach{
-    font-size:25px ;
-    padding-left: 60px;
-    padding-top: 40px;
-    padding-bottom: 10px ;
+
+.heading h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: bold;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
 }
+
+.sub_heading {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  margin-top: 10px;
+  color: #f0f0f0;
+}
+
+/* Section Titles */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #615aa8;
+}
+
+/* Outreach Section */
+.outreach {
+  font-size: 1.2rem;
+  padding: 20px;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Table */
 #customers {
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#customers th {
+  background-color: #615aa8;
+  color: white;
+  text-align: left;
+  padding: 12px;
+}
+
+#customers td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#customers tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Community & FAQ Blocks */
+.block2,
+.communityBlock {
+  padding: 30px;
+  text-align: center;
+}
+
+.communityHeading {
+  font-size: 1.8rem;
+  color: #615aa8;
+  margin-bottom: 20px;
+}
+
+.faqs {
+  text-align: center;
+  padding: 30px;
+  font-size: 1rem;
+}
+
+/* Buttons */
+#btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #7b5cd6, #9f6cf1);
+  border-radius: 30px;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(123, 92, 214, 0.4);
+}
+
+/* Footer ID Section */
+#dev {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sub_heading {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #customers {
     width: 100%;
-  }
-  
-  #customers td, #customers th {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-  
-  #customers tr:nth-child(even){background-color: #f2f2f2;}
-  
-  #customers tr:hover {background-color: #ddd;}
-  
-  #customers th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #c0a9dd;
-    color: white;
-  }
-  .block2{
-    padding: 30px;
+    font-size: 0.9rem;
   }
 
-  .communityBlock{
-    padding: 30px;
-    
-    
-    
+  .outreach {
+    font-size: 1rem;
+    padding: 10px;
   }
-  .communityHeading{
-    padding-top: 40px;
-    padding-bottom: 30px;
-    
-  }
-  .faqs{
-    text-align: center;
-    padding: 30px;
-  }
-  #btn{
-    display: inline-block;
-    padding: 12px 20px;
-    background: #615AA8;
-    border-radius: 30px;
-    font-size: 20px;
-    color: white;
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-weight: 300;
-    margin-left: 400px;
-    margin-top: 20px;
 }
-.post{
-    margin-left: 700px;
-}
-
-#dev
-{
-    height: 100px;
-    width: 1000px;
-    padding: 0 5px;
-}
-.id{
-margin-left: 200px;
-}
-
-  
